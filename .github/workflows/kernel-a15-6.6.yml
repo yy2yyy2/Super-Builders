@@ -313,3 +313,8 @@ jobs:
       add_kpm: ${{ inputs.add_kpm }}
       sukisu_commit: ${{ inputs.sukisu_commit }}
       device_codename: ${{ inputs.device_codename }}
+      - name: Upload AnyKernel3
+  uses: actions/upload-artifact@v4
+  with:
+    name: AnyKernel3
+    path: /storage/emulated/0/
