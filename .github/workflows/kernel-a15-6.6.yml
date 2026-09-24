@@ -300,7 +300,7 @@ jobs:
           - sub_level: "118"
             os_patch_level: "2026-01"
     uses: ./.github/workflows/build-wksu.yml
-    with:
+    
       android_version: android15
       kernel_version: "6.6"
       sub_level: ${{ matrix.sub_level }}
